@@ -1,7 +1,9 @@
 public class Time
 {
   // TODO: Part A - put your attributes here
-
+  private int hours;
+  private int minutes;
+  private int seconds;
 
   // TODO: Part B - create your non-default constructor
   /**
@@ -9,8 +11,18 @@ public class Time
   * The number of minutes and seconds is between 0 and 59 inclusive.
   */
 
+  public Time() {
+
+  }
+
 
   // TODO: Part C - create your default constructor
+
+  private Time(int hours, int minutes, int seconds){
+    this.hours = hours;
+    this.minutes = minutes;
+    this.seconds = seconds;
+  }
 
 
   // TODO: Part D - complete the documentation for the pad method
@@ -18,7 +30,7 @@ public class Time
   * Description: 
   * Precondition: The value is greater than 0.
   */
-  private String pad(int value)
+  private String dsds(int value)
   {
     String output = "";
     if (value < 10)
